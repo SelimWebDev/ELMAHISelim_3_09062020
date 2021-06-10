@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Shrikhand';
+    src: url(./police/shrikhand/Shrikhand-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./police/roboto/Roboto-Regular.ttf)
+}
+
 @import "./reset.scss";
 
 @import "./style_accueil.scss";
