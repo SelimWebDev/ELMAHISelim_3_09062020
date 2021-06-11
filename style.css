@@ -6,6 +6,10 @@
   font-family: "Roboto";
   src: url(./police/roboto/Roboto-Regular.ttf);
 }
+* {
+  font-family: "Roboto";
+}
+
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -49,10 +53,6 @@ table {
 
 td, th {
   padding: 0;
-}
-
-* {
-  font-family: "Roboto";
 }
 
 header {
@@ -246,16 +246,27 @@ header .fas.fa-arrow-left {
   color: black;
 }
 
-.top_img_wrap {
+#top_img_wrap {
   height: 245px;
+  z-index: 1;
+}
+#top_img_wrap img {
+  z-index: auto;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 #card {
+  z-index: 2;
+  margin-top: -50px;
   height: 1660px;
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
 }
 #card #title_card {
   display: flex;
@@ -263,6 +274,52 @@ header .fas.fa-arrow-left {
 }
 #card #title_card h2 {
   font-family: "Shrikhand";
+}
+#card ul {
+  height: 275px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#card ul h4 {
+  width: 350px;
+}
+#card ul li {
+  height: 70px;
+  width: 350px;
+  padding-left: 15px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-top: 15px;
+  background-color: white;
+  border-radius: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#card ul li h5 {
+  font-weight: bold;
+}
+#card ul li .desc {
+  display: flex;
+  justify-content: space-between;
+}
+#card ul li .desc span {
+  font-size: 14px;
+}
+#card ul li .desc .price {
+  font-size: 16px;
+  font-weight: bold;
+}
+#card #btn_contain {
+  display: flex;
+  justify-content: center;
+}
+#card #btn_contain button {
+  width: 185px;
+  height: 50px;
+  border-radius: 1.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */

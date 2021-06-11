@@ -7,16 +7,27 @@ header {
     }
 }
 
-.top_img_wrap {
+#top_img_wrap {
     height: 245px;
+    z-index: 1;
+    & img {
+        z-index: auto;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 #card{
+    z-index: 2;
+    margin-top: -50px;
     height: 1660px;
     background-color: #f6f6f6;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
 
     & #title_card {
         display: flex;
@@ -26,4 +37,60 @@ header {
             font-family: 'Shrikhand';
         }
     }
+    & ul {
+        height: 275px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        & h4 {
+            width: 350px;
+        }
+
+        & li {
+            height: 70px;
+            width: 350px;
+            padding-left: 15px;
+            padding-right: 25px;
+            padding-bottom: 10px;
+            padding-top: 15px;
+            background-color: white;
+            border-radius: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            & h5 {
+                font-weight: bold;
+            }
+
+            & .desc {
+                display: flex;
+                justify-content: space-between;
+
+                & span {
+                    font-size: 14px;
+                }
+
+                & .price {
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    & #btn_contain {
+        display: flex;
+        justify-content: center;
+
+        & button {
+        width: 185px;
+        height: 50px;
+        border-radius: 1.25rem;
+        }
+    }
+    
+    
 }

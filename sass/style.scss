@@ -8,6 +8,10 @@
     src: url(./police/roboto/Roboto-Regular.ttf)
 }
 
+* {
+    font-family: 'Roboto';
+}
+
 @import "./reset.scss";
 
 @import "./style_accueil.scss";
