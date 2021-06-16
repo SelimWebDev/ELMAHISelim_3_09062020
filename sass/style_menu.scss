@@ -55,15 +55,10 @@ header {
         & li {
             height: 70px;
             width: 350px;
-            padding-left: 15px;
-            padding-right: 25px;
-            padding-bottom: 10px;
-            padding-top: 15px;
             background-color: white;
             box-shadow: 0 0 16px #0000002e;
             border-radius: 1.25rem;
             display: flex;
-            flex-direction: column;
             justify-content: space-between;
 
             & h5 {
@@ -72,18 +67,54 @@ header {
 
             & .desc {
                 display: flex;
+                flex-direction: column;
                 justify-content: space-between;
+                padding-left: 15px;
+                padding-top: 15px;
+                padding-bottom: 10px;
 
                 & span {
                     font-size: 14px;
                 }
 
-                & .price {
-                    font-size: 16px;
-                    font-weight: bold;
-                }
+            }
+
+            & .price {
+                font-size: 16px;
+                font-weight: bold;
+                display: flex;
+                flex-direction: column-reverse;
+                padding-bottom: 10px;
+                padding-right: 25px;
+            }
+
+            & .confirmation {
+                display: none;
             }
         }
+
+        & li:hover {
+            & .confirmation {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 70px;
+                height: auto;
+                background-color: #99e2d0;
+                border-bottom-right-radius: 1.25rem;
+                border-top-right-radius: 1.25rem;
+                margin-right: -1px;
+
+                & .fa-check-circle {
+                    color: white;
+                }
+            }
+
+            & .price {
+                padding-right: 0px;
+            }
+        }
+
     }
 
     & #btn_contain {

@@ -205,15 +205,15 @@ h2 {
   padding-right: 25px;
   height: 80px;
 }
-#restaurants #rest_contain .rest_card .rest_caption .far.fa-heart:hover {
+#restaurants #rest_contain .rest_card .rest_caption .caption_icone .fill_heart {
   display: none;
 }
-#restaurants #rest_contain .rest_card .rest_caption .fas.fa-heart {
+#restaurants #rest_contain .rest_card .rest_caption .caption_icone:hover .empty_heart {
   display: none;
 }
-#restaurants #rest_contain .rest_card .rest_caption .fas.fa-heart:hover {
+#restaurants #rest_contain .rest_card .rest_caption .caption_icone:hover .fill_heart {
+  color: #FF79DA;
   display: block;
-  position: absolute;
 }
 #restaurants #rest_contain .rest_card .rest_caption .caption_txt h3 {
   font-size: 18px;
@@ -291,15 +291,10 @@ header .fas.fa-arrow-left {
 #card ul li {
   height: 70px;
   width: 350px;
-  padding-left: 15px;
-  padding-right: 25px;
-  padding-bottom: 10px;
-  padding-top: 15px;
   background-color: white;
   box-shadow: 0 0 16px #0000002e;
   border-radius: 1.25rem;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 #card ul li h5 {
@@ -307,14 +302,42 @@ header .fas.fa-arrow-left {
 }
 #card ul li .desc {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 #card ul li .desc span {
   font-size: 14px;
 }
-#card ul li .desc .price {
+#card ul li .price {
   font-size: 16px;
   font-weight: bold;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 10px;
+  padding-right: 25px;
+}
+#card ul li .confirmation {
+  display: none;
+}
+#card ul li:hover .confirmation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: auto;
+  background-color: #99e2d0;
+  border-bottom-right-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+  margin-right: -1px;
+}
+#card ul li:hover .confirmation .fa-check-circle {
+  color: white;
+}
+#card ul li:hover .price {
+  padding-right: 0px;
 }
 #card #btn_contain {
   display: flex;

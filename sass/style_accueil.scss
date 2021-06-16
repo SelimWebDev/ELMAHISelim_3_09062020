@@ -170,17 +170,20 @@ h2 {
                 padding-right: 25px;
                 height: 80px;
 
-                & .far.fa-heart:hover {
-                    display: none;
+                & .caption_icone {
+                    & .fill_heart {
+                        display: none;
+                    }
                 }
 
-                & .fas.fa-heart {
-                    display: none;
-                }
-
-                & .fas.fa-heart:hover {
-                    display: block;
-                    position: absolute;
+                & .caption_icone:hover {
+                    & .empty_heart {
+                        display: none;
+                    }
+                    & .fill_heart {
+                        color: #FF79DA;
+                        display: block;
+                    }
                 }
 
                 & .caption_txt {
