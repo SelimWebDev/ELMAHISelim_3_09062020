@@ -307,6 +307,8 @@ header .fas.fa-arrow-left {
 }
 #card ul li h5 {
   font-weight: bold;
+  width: 100%;
+  white-space: nowrap;
 }
 #card ul li .desc {
   width: 265px;
@@ -319,6 +321,10 @@ header .fas.fa-arrow-left {
 }
 #card ul li .desc span {
   font-size: 15px;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #card ul li .contain_price {
   position: relative;

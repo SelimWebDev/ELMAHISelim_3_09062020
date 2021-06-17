@@ -74,6 +74,8 @@ header {
 
             & h5 {
                 font-weight: bold;
+                width: 100%;
+                white-space: nowrap;
             }
 
             & .desc {
@@ -87,6 +89,10 @@ header {
 
                 & span {
                     font-size: 15px;
+                    width: 90%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
 
             }
