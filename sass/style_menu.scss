@@ -16,6 +16,11 @@ header {
     }
 }
 
+.contain_price {
+    position: relative;
+    width: 150px;
+}
+
 #card{
     height: 1180px;
     background-color: #f6f6f6;
@@ -74,7 +79,7 @@ header {
                 padding-bottom: 10px;
 
                 & span {
-                    font-size: 14px;
+                    font-size: 15px;
                 }
 
             }
@@ -86,15 +91,23 @@ header {
                 flex-direction: column-reverse;
                 padding-bottom: 10px;
                 padding-right: 25px;
+                position: absolute;
+                top: 45px;
+                left: 130px;
             }
 
             & .confirmation {
-                display: none;
+                visibility: hidden;
+                width: 0px;
+                transition-property: width;
+                transition-duration: 3000ms;
+                
             }
         }
 
         & li:hover {
             & .confirmation {
+                visibility: visible;
                 display: flex;
                 justify-content: center;
                 align-items: center;

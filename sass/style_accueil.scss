@@ -61,7 +61,7 @@ h2 {
         border-radius: 2rem;
         font-size: 15px;
         color: white;
-        background: linear-gradient(to bottom right, #FF79DA, #9356DC,);
+        background: linear-gradient(to bottom right, #FF79DA, #9356DC);
         border: none;
     }
 }
@@ -170,26 +170,21 @@ h2 {
                 padding-right: 25px;
                 height: 80px;
 
-                & .caption_icone {
-                    & .fill_heart {
-                        display: none;
-                    }
-                }
-
-                & .caption_icone:hover {
-                    & .empty_heart {
-                        display: none;
-                    }
-                    & .fill_heart {
-                        color: #FF79DA;
-                        display: block;
-                    }
-                }
-
                 & .caption_txt {
                     & h3 {
                         font-size: 18px;
                         font-weight: bold;
+                    }
+                }
+
+                & i {
+                    color: gray;
+
+                    &:hover {
+                        font-weight: bold;
+                        background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
                     }
                 }
             }

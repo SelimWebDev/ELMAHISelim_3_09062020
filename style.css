@@ -205,19 +205,18 @@ h2 {
   padding-right: 25px;
   height: 80px;
 }
-#restaurants #rest_contain .rest_card .rest_caption .caption_icone .fill_heart {
-  display: none;
-}
-#restaurants #rest_contain .rest_card .rest_caption .caption_icone:hover .empty_heart {
-  display: none;
-}
-#restaurants #rest_contain .rest_card .rest_caption .caption_icone:hover .fill_heart {
-  color: #FF79DA;
-  display: block;
-}
 #restaurants #rest_contain .rest_card .rest_caption .caption_txt h3 {
   font-size: 18px;
   font-weight: bold;
+}
+#restaurants #rest_contain .rest_card .rest_caption i {
+  color: gray;
+}
+#restaurants #rest_contain .rest_card .rest_caption i:hover {
+  font-weight: bold;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 footer {
@@ -254,6 +253,11 @@ header .fas.fa-arrow-left {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.contain_price {
+  position: relative;
+  width: 150px;
 }
 
 #card {
@@ -309,7 +313,7 @@ header .fas.fa-arrow-left {
   padding-bottom: 10px;
 }
 #card ul li .desc span {
-  font-size: 14px;
+  font-size: 15px;
 }
 #card ul li .price {
   font-size: 16px;
@@ -318,11 +322,18 @@ header .fas.fa-arrow-left {
   flex-direction: column-reverse;
   padding-bottom: 10px;
   padding-right: 25px;
+  position: absolute;
+  top: 45px;
+  left: 130px;
 }
 #card ul li .confirmation {
-  display: none;
+  visibility: hidden;
+  width: 0px;
+  transition-property: width;
+  transition-duration: 3000ms;
 }
 #card ul li:hover .confirmation {
+  visibility: visible;
   display: flex;
   justify-content: center;
   align-items: center;
