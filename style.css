@@ -328,13 +328,13 @@ header .fas.fa-arrow-left {
 }
 #card ul li .contain_price {
   position: relative;
-  width: 50px;
+  width: 28px;
 }
 #card ul li .contain_price .price {
   font-size: 16px;
   font-weight: bold;
   position: absolute;
-  top: 45px;
+  bottom: 10px;
   right: 0px;
 }
 #card ul li .confirmation {
