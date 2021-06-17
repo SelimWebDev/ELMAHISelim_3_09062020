@@ -255,11 +255,6 @@ header .fas.fa-arrow-left {
   object-fit: cover;
 }
 
-.contain_price {
-  position: relative;
-  width: 150px;
-}
-
 #card {
   height: 1180px;
   background-color: #f6f6f6;
@@ -275,6 +270,15 @@ header .fas.fa-arrow-left {
 }
 #card #title_card h2 {
   font-family: "Shrikhand";
+}
+#card #title_card i {
+  color: gray;
+}
+#card #title_card i:hover {
+  font-weight: bold;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #card ul {
   height: 270px;
@@ -305,6 +309,7 @@ header .fas.fa-arrow-left {
   font-weight: bold;
 }
 #card ul li .desc {
+  width: 265px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -315,29 +320,35 @@ header .fas.fa-arrow-left {
 #card ul li .desc span {
   font-size: 15px;
 }
-#card ul li .price {
+#card ul li .contain_price {
+  position: relative;
+  width: 50px;
+}
+#card ul li .contain_price .price {
   font-size: 16px;
   font-weight: bold;
-  display: flex;
-  flex-direction: column-reverse;
-  padding-bottom: 10px;
-  padding-right: 25px;
   position: absolute;
   top: 45px;
-  left: 130px;
+  right: 0px;
 }
 #card ul li .confirmation {
   visibility: hidden;
   width: 0px;
   transition-property: width;
-  transition-duration: 3000ms;
+  transition-duration: 1000ms;
+}
+#card ul li .fa-check-circle {
+  color: white;
+  transform: rotate(0.5turn);
+  transition-property: transform;
+  transition-duration: 1000ms;
 }
 #card ul li:hover .confirmation {
   visibility: visible;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70px;
+  width: 60px;
   height: auto;
   background-color: #99e2d0;
   border-bottom-right-radius: 1.25rem;
@@ -345,10 +356,10 @@ header .fas.fa-arrow-left {
   margin-right: -1px;
 }
 #card ul li:hover .confirmation .fa-check-circle {
-  color: white;
+  transform: rotate(1turn);
 }
-#card ul li:hover .price {
-  padding-right: 0px;
+#card ul li:hover .contain_price .price {
+  right: 10px;
 }
 #card #btn_contain {
   display: flex;
