@@ -117,14 +117,20 @@ header {
                 transition-property: width;
                 transition-duration: 1000ms;
                 
+
+                .contain_icone {
+                    transform: rotate(180deg);
+                    width: 0px;
+                    transition-property: transform, width;
+                    transition-duration: 1500ms;
+    
+                    & .fa-check-circle {
+                        color: white;
+                    }
+                }
+
             }
 
-            & .fa-check-circle {
-                color: white;
-                transform: rotate(0.5turn);
-                transition-property: transform;
-                transition-duration: 1000ms;
-            }
         }
 
         & li:hover {
@@ -140,9 +146,14 @@ header {
                 border-top-right-radius: 1.25rem;
                 margin-right: -1px;
 
-                & .fa-check-circle {
-                    transform: rotate(1turn);
-                }
+                .contain_icone {
+                    transform: rotate(360deg);
+                    width: 32px;
+
+                    & .fa-check-circle {
+                        width: 32px;
+                    }
+                } 
             }
 
             & .contain_price {

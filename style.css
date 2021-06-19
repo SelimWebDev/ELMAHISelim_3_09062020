@@ -343,11 +343,14 @@ header .fas.fa-arrow-left {
   transition-property: width;
   transition-duration: 1000ms;
 }
-#card ul li .fa-check-circle {
+#card ul li .confirmation .contain_icone {
+  transform: rotate(180deg);
+  width: 0px;
+  transition-property: transform, width;
+  transition-duration: 1500ms;
+}
+#card ul li .confirmation .contain_icone .fa-check-circle {
   color: white;
-  transform: rotate(0.5turn);
-  transition-property: transform;
-  transition-duration: 1000ms;
 }
 #card ul li:hover .confirmation {
   visibility: visible;
@@ -361,8 +364,12 @@ header .fas.fa-arrow-left {
   border-top-right-radius: 1.25rem;
   margin-right: -1px;
 }
-#card ul li:hover .confirmation .fa-check-circle {
-  transform: rotate(1turn);
+#card ul li:hover .confirmation .contain_icone {
+  transform: rotate(360deg);
+  width: 32px;
+}
+#card ul li:hover .confirmation .contain_icone .fa-check-circle {
+  width: 32px;
 }
 #card ul li:hover .contain_price .price {
   right: 10px;
