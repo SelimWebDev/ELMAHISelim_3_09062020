@@ -360,6 +360,23 @@ header .fas.fa-arrow-left {
   height: 3px;
   background-color: #99E2D0;
 }
+#card ul .choix_1 {
+  animation: appear 1000ms;
+}
+#card ul .choix_2 {
+  animation: appear 1000ms 75ms;
+}
+#card ul .choix_3 {
+  animation: appear 1000ms 150ms;
+}
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 #card ul li {
   height: 70px;
   width: 350px;

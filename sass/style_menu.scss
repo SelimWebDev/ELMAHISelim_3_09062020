@@ -62,6 +62,24 @@ header {
             background-color: #99E2D0;
         }
 
+        & .choix_1 {
+            animation: appear 1000ms;
+        }
+        & .choix_2 {
+            animation: appear 1000ms 75ms;
+        }
+        & .choix_3 {
+            animation: appear 1000ms 150ms;
+        }
+
+        @keyframes appear {
+            0% {
+                transform: scale(0);
+            }
+            100% {
+                transform: scale(1);
+            }
+        } 
         
         & li {
             height: 70px;
@@ -71,6 +89,7 @@ header {
             border-radius: 1.25rem;
             display: flex;
             justify-content: space-between;
+
 
             & h5 {
                 font-weight: bold;
