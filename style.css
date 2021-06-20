@@ -176,6 +176,7 @@ h2 {
 }
 #reservation button:hover {
   box-shadow: 0 0 16px #0000002e;
+  opacity: 0.8;
 }
 
 #fonctionnement {
@@ -450,7 +451,10 @@ header .fas.fa-arrow-left {
   color: white;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   border: none;
+}
+#card #btn_contain button:hover {
   box-shadow: 0 0 16px #0000002e;
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=style.css.map */

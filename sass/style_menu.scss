@@ -178,7 +178,10 @@ header {
         color: white;
         background: linear-gradient(to bottom right, #FF79DA, #9356DC,);
         border: none;
-        box-shadow: 0 0 16px #0000002e;
+            &:hover {
+                box-shadow: 0 0 16px #0000002e;
+                opacity: 0.8;
+            }
         }
     }
 }
