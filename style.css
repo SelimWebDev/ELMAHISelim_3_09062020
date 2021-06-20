@@ -351,6 +351,11 @@ header .fas.fa-arrow-left {
   transition-property: transform;
   transition-duration: 1000ms;
 }
+#card ul li:hover .desc span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 #card ul li:hover .confirmation {
   visibility: visible;
   display: flex;

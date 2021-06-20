@@ -130,6 +130,14 @@ header {
         }
 
         & li:hover {
+            & .desc {
+                & span {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+
             & .confirmation {
                 visibility: visible;
                 display: flex;
