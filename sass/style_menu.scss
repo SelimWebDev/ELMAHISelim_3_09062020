@@ -119,18 +119,14 @@ header {
                 
 
                 .contain_icone {
-                    transform: rotate(180deg);
-                    width: 0px;
-                    transition-property: transform, width;
-                    transition-duration: 1500ms;
-    
+                    overflow: hidden;
                     & .fa-check-circle {
-                        color: white;
+                        transform: rotate(180deg);
+                        transition-property: transform;
+                        transition-duration: 1000ms;
                     }
                 }
-
             }
-
         }
 
         & li:hover {
@@ -147,11 +143,9 @@ header {
                 margin-right: -1px;
 
                 .contain_icone {
-                    transform: rotate(360deg);
-                    width: 32px;
-
                     & .fa-check-circle {
-                        width: 32px;
+                        color: white;
+                        transform: rotate(360deg);
                     }
                 } 
             }
