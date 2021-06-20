@@ -124,6 +124,10 @@ h2 {
         color: white;
         background: linear-gradient(to bottom right, #FF79DA, #9356DC);
         border: none;
+
+        &:hover {
+            box-shadow: 0 0 16px #0000002e;
+        }
     }
 }
 
