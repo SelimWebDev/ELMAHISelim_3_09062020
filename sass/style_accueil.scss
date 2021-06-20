@@ -286,3 +286,38 @@ footer {
         }
     }
 }
+
+@media screen and (min-width: 1100px) {
+    #fonctionnement {
+        text-align: center;
+        height: 300px;
+        & ol{
+            flex-direction: row;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            height: 150px;
+        }
+    }
+
+    #restaurants {
+        justify-content: space-around;
+        height: 700px;
+
+        & h2 {
+            text-align: center;
+        }
+
+        & #rest_contain {
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #restaurants {
+        height: 400px;
+    }
+}
