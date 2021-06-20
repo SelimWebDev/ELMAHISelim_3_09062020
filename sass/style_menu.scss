@@ -116,16 +116,21 @@ header {
                 width: 0px;
                 transition-property: width;
                 transition-duration: 1000ms;
-                
+                position: relative;
 
                 .contain_icone {
+                    position: absolute;
+                    left: -40px;
                     transform: rotate(180deg);
                     width: 0px;
+                    height: 32px;
                     transition-property: transform, width;
                     transition-duration: 1500ms;
     
                     & .fa-check-circle {
+                        width: 32px;
                         color: white;
+                        height: 32px;
                     }
                 }
 
@@ -147,11 +152,15 @@ header {
                 margin-right: -1px;
 
                 .contain_icone {
+                    position: relative;
+                    left: 0px;
                     transform: rotate(360deg);
                     width: 32px;
+                    height: 32px;
 
                     & .fa-check-circle {
                         width: 32px;
+                        height: 32px;
                     }
                 } 
             }
