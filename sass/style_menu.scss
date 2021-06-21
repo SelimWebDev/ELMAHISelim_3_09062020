@@ -25,6 +25,8 @@ header {
     justify-content: space-evenly;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
+    position: relative;
+    margin-top: -25px;
 
     & #title_card {
         display: flex;
