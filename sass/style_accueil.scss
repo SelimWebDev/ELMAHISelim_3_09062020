@@ -322,12 +322,25 @@ footer {
             flex-direction: row;
             justify-content: space-around;
             flex-wrap: wrap;
+
+            & .rest_card {
+                width: 500px;
+            }
         }
     }
 }
 
 @media screen and (min-width: 1400px) {
     #restaurants {
-        height: 400px;
+        height: 800px;
+        & #rest_contain {
+            & .rest_card {
+                width: 600px;
+
+                & .wrap_card {
+                    height: 250px;
+                }
+            }
+        }
     }
 }

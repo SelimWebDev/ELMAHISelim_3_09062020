@@ -341,10 +341,19 @@ footer ul a {
     justify-content: space-around;
     flex-wrap: wrap;
   }
+  #restaurants #rest_contain .rest_card {
+    width: 500px;
+  }
 }
 @media screen and (min-width: 1400px) {
   #restaurants {
-    height: 400px;
+    height: 800px;
+  }
+  #restaurants #rest_contain .rest_card {
+    width: 600px;
+  }
+  #restaurants #rest_contain .rest_card .wrap_card {
+    height: 250px;
   }
 }
 header .fas.fa-arrow-left {
