@@ -71,6 +71,7 @@ body {
   align-items: center;
   animation: disapear 4000ms;
   visibility: hidden;
+  z-index: 10000;
 }
 
 @keyframes disapear {
@@ -253,6 +254,7 @@ h2 {
 }
 #restaurants #rest_contain .rest_card .wrap_card {
   height: 175px;
+  position: relative;
 }
 #restaurants #rest_contain .rest_card .wrap_card .rest_img {
   width: 100%;
@@ -260,6 +262,13 @@ h2 {
   object-fit: cover;
   border-top-left-radius: 1.25rem;
   border-top-right-radius: 1.25rem;
+}
+#restaurants #rest_contain .rest_card .wrap_card .new {
+  background-color: #99e2d0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 3px;
 }
 #restaurants #rest_contain .rest_card .rest_caption {
   display: flex;
