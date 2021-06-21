@@ -399,29 +399,29 @@ header .fas.fa-arrow-left {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#card ul {
+#card #card_contain ul {
   height: 270px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-#card ul h4 {
+#card #card_contain ul h4 {
   width: 350px;
 }
-#card ul .under_line {
+#card #card_contain ul .under_line {
   margin-top: 5px;
   width: 40px;
   height: 3px;
   background-color: #99E2D0;
 }
-#card ul .choix_1 {
+#card #card_contain ul .choix_1 {
   animation: appear 1000ms;
 }
-#card ul .choix_2 {
+#card #card_contain ul .choix_2 {
   animation: appear 1000ms 75ms;
 }
-#card ul .choix_3 {
+#card #card_contain ul .choix_3 {
   animation: appear 1000ms 150ms;
 }
 @keyframes appear {
@@ -432,7 +432,7 @@ header .fas.fa-arrow-left {
     transform: scale(1);
   }
 }
-#card ul li {
+#card #card_contain ul li {
   height: 70px;
   width: 350px;
   background-color: white;
@@ -441,12 +441,12 @@ header .fas.fa-arrow-left {
   display: flex;
   justify-content: space-between;
 }
-#card ul li h5 {
+#card #card_contain ul li h5 {
   font-weight: bold;
   width: 100%;
   white-space: nowrap;
 }
-#card ul li .desc {
+#card #card_contain ul li .desc {
   width: 265px;
   display: flex;
   flex-direction: column;
@@ -455,44 +455,44 @@ header .fas.fa-arrow-left {
   padding-top: 15px;
   padding-bottom: 10px;
 }
-#card ul li .desc span {
+#card #card_contain ul li .desc span {
   font-size: 15px;
   width: 90%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-#card ul li .contain_price {
+#card #card_contain ul li .contain_price {
   position: relative;
   width: 28px;
 }
-#card ul li .contain_price .price {
+#card #card_contain ul li .contain_price .price {
   font-size: 16px;
   font-weight: bold;
   position: absolute;
   bottom: 10px;
   right: 0px;
 }
-#card ul li .confirmation {
+#card #card_contain ul li .confirmation {
   visibility: hidden;
   width: 0px;
   transition-property: width;
   transition-duration: 1000ms;
 }
-#card ul li .confirmation .contain_icone {
+#card #card_contain ul li .confirmation .contain_icone {
   overflow: hidden;
 }
-#card ul li .confirmation .contain_icone .fa-check-circle {
+#card #card_contain ul li .confirmation .contain_icone .fa-check-circle {
   transform: rotate(180deg);
   transition-property: transform;
   transition-duration: 1000ms;
 }
-#card ul li:hover .desc span {
+#card #card_contain ul li:hover .desc span {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-#card ul li:hover .confirmation {
+#card #card_contain ul li:hover .confirmation {
   visibility: visible;
   display: flex;
   justify-content: center;
@@ -504,11 +504,11 @@ header .fas.fa-arrow-left {
   border-top-right-radius: 1.25rem;
   margin-right: -1px;
 }
-#card ul li:hover .confirmation .contain_icone .fa-check-circle {
+#card #card_contain ul li:hover .confirmation .contain_icone .fa-check-circle {
   color: white;
   transform: rotate(360deg);
 }
-#card ul li:hover .contain_price .price {
+#card #card_contain ul li:hover .contain_price .price {
   right: 10px;
 }
 #card #btn_contain {
@@ -527,6 +527,22 @@ header .fas.fa-arrow-left {
 #card #btn_contain button:hover {
   box-shadow: 0 0 16px #0000002e;
   opacity: 0.8;
+}
+
+@media screen and (min-width: 1100px) {
+  #card {
+    height: 580px;
+  }
+  #card #title_card {
+    justify-content: center;
+  }
+  #card #title_card i {
+    margin-left: 25px;
+  }
+  #card #card_contain {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

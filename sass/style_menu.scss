@@ -46,145 +46,147 @@ header {
             }
         }
     }
-    & ul {
-        height: 270px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
 
-        & h4 {
-            width: 350px;
-        }
-
-        & .under_line {
-            margin-top: 5px;
-            width: 40px;
-            height: 3px;
-            background-color: #99E2D0;
-        }
-
-        & .choix_1 {
-            animation: appear 1000ms;
-        }
-        & .choix_2 {
-            animation: appear 1000ms 75ms;
-        }
-        & .choix_3 {
-            animation: appear 1000ms 150ms;
-        }
-
-        @keyframes appear {
-            0% {
-                transform: scale(0);
-            }
-            100% {
-                transform: scale(1);
-            }
-        } 
-        
-        & li {
-            height: 70px;
-            width: 350px;
-            background-color: white;
-            box-shadow: 0 0 16px #0000002e;
-            border-radius: 1.25rem;
+    & #card_contain{
+        & ul {
+            height: 270px;
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
+            align-items: center;
 
-
-            & h5 {
-                font-weight: bold;
-                width: 100%;
-                white-space: nowrap;
+            & h4 {
+                width: 350px;
             }
 
-            & .desc {
-                width: 265px;
+            & .under_line {
+                margin-top: 5px;
+                width: 40px;
+                height: 3px;
+                background-color: #99E2D0;
+            }
+
+            & .choix_1 {
+                animation: appear 1000ms;
+            }
+            & .choix_2 {
+                animation: appear 1000ms 75ms;
+            }
+            & .choix_3 {
+                animation: appear 1000ms 150ms;
+            }
+
+            @keyframes appear {
+                0% {
+                    transform: scale(0);
+                }
+                100% {
+                    transform: scale(1);
+                }
+            } 
+            
+            & li {
+                height: 70px;
+                width: 350px;
+                background-color: white;
+                box-shadow: 0 0 16px #0000002e;
+                border-radius: 1.25rem;
                 display: flex;
-                flex-direction: column;
                 justify-content: space-between;
-                padding-left: 15px;
-                padding-top: 15px;
-                padding-bottom: 10px;
 
-                & span {
-                    font-size: 15px;
-                    width: 90%;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
 
-            }
-
-            & .contain_price {
-                position: relative;
-                width: 28px;
-
-                & .price {
-                    font-size: 16px;
+                & h5 {
                     font-weight: bold;
-                    position: absolute;
-                    bottom: 10px;
-                    right: 0px;
-                }
-
-            }
-
-            & .confirmation {
-                visibility: hidden;
-                width: 0px;
-                transition-property: width;
-                transition-duration: 1000ms;
-
-                .contain_icone {
-                    overflow: hidden;
-                    & .fa-check-circle {
-                        transform: rotate(180deg);
-                        transition-property: transform;
-                        transition-duration: 1000ms;
-                    }
-                }
-            }
-        }
-
-        & li:hover {
-            & .desc {
-                & span {
+                    width: 100%;
                     white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
                 }
-            }
 
-            & .confirmation {
-                visibility: visible;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 60px;
-                height: auto;
-                background-color: #99e2d0;
-                border-bottom-right-radius: 1.25rem;
-                border-top-right-radius: 1.25rem;
-                margin-right: -1px;
+                & .desc {
+                    width: 265px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding-left: 15px;
+                    padding-top: 15px;
+                    padding-bottom: 10px;
 
-                .contain_icone {
-                    & .fa-check-circle {
-                        color: white;
-                        transform: rotate(360deg);
+                    & span {
+                        font-size: 15px;
+                        width: 90%;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
                     }
-                } 
-            }
 
-            & .contain_price {
-                & .price {
-                    right: 10px;
+                }
+
+                & .contain_price {
+                    position: relative;
+                    width: 28px;
+
+                    & .price {
+                        font-size: 16px;
+                        font-weight: bold;
+                        position: absolute;
+                        bottom: 10px;
+                        right: 0px;
+                    }
+
+                }
+
+                & .confirmation {
+                    visibility: hidden;
+                    width: 0px;
+                    transition-property: width;
+                    transition-duration: 1000ms;
+
+                    .contain_icone {
+                        overflow: hidden;
+                        & .fa-check-circle {
+                            transform: rotate(180deg);
+                            transition-property: transform;
+                            transition-duration: 1000ms;
+                        }
+                    }
                 }
             }
-        }
 
+            & li:hover {
+                & .desc {
+                    & span {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+
+                & .confirmation {
+                    visibility: visible;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 60px;
+                    height: auto;
+                    background-color: #99e2d0;
+                    border-bottom-right-radius: 1.25rem;
+                    border-top-right-radius: 1.25rem;
+                    margin-right: -1px;
+
+                    .contain_icone {
+                        & .fa-check-circle {
+                            color: white;
+                            transform: rotate(360deg);
+                        }
+                    } 
+                }
+
+                & .contain_price {
+                    & .price {
+                        right: 10px;
+                    }
+                }
+            }
+        }    
     }
 
     & #btn_contain {
@@ -205,4 +207,28 @@ header {
             }
         }
     }
+}
+
+
+@media screen and (min-width: 1100px) {
+    #card {
+        height: 580px;
+
+        & #title_card{
+            justify-content: center;
+
+            & i {
+                margin-left: 25px;
+            }
+        }
+        & #card_contain {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1400px){
+    
 }
