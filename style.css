@@ -355,6 +355,10 @@ footer ul a {
   #restaurants #rest_contain .rest_card .wrap_card {
     height: 250px;
   }
+
+  #fonctionnement ol {
+    justify-content: space-around;
+  }
 }
 header .fas.fa-arrow-left {
   position: absolute;
