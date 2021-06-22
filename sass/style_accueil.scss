@@ -213,7 +213,8 @@ h2 {
         height: 90%;
 
         & .rest_card {
-            width: 350px;
+            width: 80%;
+            max-width: 500px;
             border-radius: 1.25rem;
             box-shadow: 0 0 16px #0000002e;
     
@@ -336,6 +337,7 @@ footer {
         & #rest_contain {
             & .rest_card {
                 width: 600px;
+                max-width: unset;
 
                 & .wrap_card {
                     height: 250px;
